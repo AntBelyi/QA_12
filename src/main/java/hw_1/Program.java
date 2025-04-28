@@ -5,16 +5,15 @@ public class Program {
     public static void main(String[] args) {
         int a = 7;
         int b = 9;
+        System.out.println("befoure a " + a);
+        System.out.println("befoure b " + b);
 
-        System.out.println("Before changing");
-        System.out.println(a);
-        System.out.println(b);
+        a = a + b;
+        b = a - b;
+        a = a - b;
 
-        //**some code**//
-
-        System.out.println("After changing");
-        System.out.println(9);
-        System.out.println(7);
+        System.out.println("After a " + a);
+        System.out.println("After b " + b);
     }
 
 }

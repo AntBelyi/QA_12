@@ -1,7 +1,7 @@
-    package hw_1;
+package hw_1;
 
-    public class hw_1 {
-    public static void main(String[] args){
+public class hw_1 {
+    public static void main(String[] args) {
 
         int a = 7;
         int b = 9;
@@ -10,11 +10,14 @@
         System.out.println(a);
         System.out.println(b);
 
-
-        int fuu = a;
-        a = b;
-        b = fuu;
         System.out.println("After changing");
+
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+
         System.out.println(a);
         System.out.println(b);
 

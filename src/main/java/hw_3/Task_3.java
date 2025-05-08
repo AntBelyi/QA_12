@@ -17,7 +17,6 @@ public class Task_3 {
         System.out.println("Enter two numbers :");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        int result = a > b ? a - b : b - a;
-        return result;
+        return a > b ? a - b : b - a;
     }
 }

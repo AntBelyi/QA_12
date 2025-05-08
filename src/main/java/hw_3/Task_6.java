@@ -1,18 +1,17 @@
 package hw_3;
 
-import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
 
 public class Task_6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Enter programs (Idea, Git, Java ) :");
-        String str1 = scanner.nextLine();
+        String programmes = scanner.nextLine();
         System.out.println(" Enter OS (Linux, MacOS, Window ) :");
-        String str2 = scanner.nextLine();
-       switch (str1 ) {
+        String operatingSystem = scanner.nextLine();
+       switch (programmes ) {
            case "Idea":
-               switch (str2) {
+               switch (operatingSystem) {
                    case "Linux":
                        System.out.println("https://www.jetbrains.com/ru-ru/idea/download/?section=linux");
                        break;
@@ -25,7 +24,7 @@ public class Task_6 {
                }
                break;
            case "Git":
-               switch (str2){
+               switch (operatingSystem){
                    case "Linux":
                        System.out.println("https://git-scm.com/downloads/linux");
                        break;
@@ -38,7 +37,7 @@ public class Task_6 {
                }
            break;
            case "Java":
-               switch (str2){
+               switch (operatingSystem){
                    case "Linux":
                        System.out.println("https://www.java.com/ru/download/help/linux_install.html#rpm");
                        break;
@@ -53,7 +52,6 @@ public class Task_6 {
            default:
                System.out.println(" Not");
        }
-
 
     }
 

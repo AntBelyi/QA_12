@@ -16,4 +16,5 @@ public class Task1 {
         System.out.println(string1 + " " + string2 + " " + string3 + " " + string4);
         scanner.close();
     }
+
 }

@@ -19,18 +19,19 @@ public class Task_5 {
         System.out.println("Enter char :");
         String ch = scanner.next();
         System.out.println("Enter two numbers :");
-        int one = scanner.nextInt();
-        int two = scanner.nextInt();
+        int oneNumber = scanner.nextInt();
+        int twoNumber = scanner.nextInt();
+        int two;
         if (ch.equals("+")) {
-            return one + two;
+            return oneNumber + twoNumber;
         } else if (ch.equals("-")) {
-            return one - two;
+            return oneNumber - twoNumber;
         } else if (ch.equals("%")) {
-            return one % two;
+            return oneNumber % twoNumber;
         } else if (ch.equals("/")) {
-            return one / two;
+            return oneNumber / twoNumber;
         } else if (ch.equals("*")) {
-            return one * two;
+            return oneNumber * twoNumber;
         } else {
             return 0;
         }
@@ -40,8 +41,8 @@ public class Task_5 {
         System.out.println("Enter char :");
         String ch = scanner.next();
         System.out.println("Enter two numbers :");
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-        return ch.equals("+") ? (b + c) : ch.equals("-") ? (b - c) : ch.equals("%") ? (b % c) : ch.equals("/") ? (b / c) : ch.equals("*") ? (b / c) : 0;
+        int oneNumber = scanner.nextInt();
+        int twoNumber = scanner.nextInt();
+        return ch.equals("+") ? (oneNumber + twoNumber) : ch.equals("-") ? (oneNumber - twoNumber) : ch.equals("%") ? (oneNumber % twoNumber) : ch.equals("/") ? (oneNumber / twoNumber) : ch.equals("*") ? (oneNumber/ twoNumber) : 0;
     }
 }

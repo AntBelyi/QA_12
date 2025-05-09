@@ -9,12 +9,12 @@ public class Task_5 {
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        int[] numbers = new int[10];
+        int[] numbers = new int[45];
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(100);
+            numbers[i] = random.nextInt(101)-50;
         }
         System.out.println(Arrays.toString(numbers));
-        System.out.println("Ввидите число до 100");
+        System.out.println("Enter a number up to 100");
         int val = scanner.nextInt();
         boolean foud = false;
         for (int num : numbers) {
@@ -24,9 +24,9 @@ public class Task_5 {
             }
         }
         if (foud) {
-            System.out.println(" Число в массиве " + foud);
+            System.out.println(" Number in array " + foud);
         } else {
-            System.out.println(" Число в массиве " + foud);
+            System.out.println("Number in array " + foud);
         }
         scanner.close();
     }

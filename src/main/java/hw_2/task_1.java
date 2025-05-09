@@ -24,5 +24,6 @@ public class task_1 {
         System.out.println(string3);
         int length3 = string3.length();
         System.out.println("Number of symbols: " + length3);
+
     }
 }

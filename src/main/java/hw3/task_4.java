@@ -6,6 +6,11 @@ public class task_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        daysWeek(scanner);
+        scanner.close();
+    }
+
+    public static void daysWeek(Scanner scanner) {
         System.out.print("Введіть число (від 1 до 7): ");
         int day = scanner.nextInt();
 

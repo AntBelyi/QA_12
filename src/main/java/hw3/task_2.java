@@ -6,6 +6,11 @@ public class task_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        triangleAnawer(scanner);
+        scanner.close();
+    }
+
+    public static void triangleAnawer(Scanner scanner) {
         System.out.print("Введіть першу сторону: ");
         int a = scanner.nextInt();
         System.out.print("Введіть другу сторону: ");

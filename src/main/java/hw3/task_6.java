@@ -66,6 +66,6 @@ public class task_6 {
                 link = "Такої програми не існує.";
         }
         System.out.println(link);
+        scanner.close();
     }
 }
-

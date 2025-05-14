@@ -14,6 +14,7 @@ public class task_3 {
         System.out.println(a);
         System.out.println(A);
 
+
         int result = A + a;
         System.out.println(result);
     }

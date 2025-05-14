@@ -25,3 +25,10 @@ hs_err_pid*
 replay_pid*
 
 *.iml
+out/
+hw4/
+hw_1/
+hw_3/
+hw_5/
+hw_7/
+

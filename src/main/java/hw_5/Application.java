@@ -11,5 +11,6 @@ public class Application {
 
         NumbersApplication game = new NumbersApplication(name);
         game.startGame(scanner);
+        scanner.close();
     }
 }

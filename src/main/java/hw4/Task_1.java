@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task_1 {
+public class gitTask_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder sentence = new StringBuilder();

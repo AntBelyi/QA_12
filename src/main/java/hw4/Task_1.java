@@ -5,7 +5,7 @@ public class Task_1 {
         Scanner scanner = new Scanner(System.in);
         StringBuilder sentence = new StringBuilder();
 
-        System.out.println("Вводьте слова. Щоб завершити, введіть 'STOP':");
+        System.out.println("Enter words. To finish, type 'STOP':");
 
         while (true) {
             String word = scanner.next();
@@ -15,7 +15,7 @@ public class Task_1 {
             sentence.append(word).append(" ");
         }
 
-        System.out.println("Підсумкове речення:");
+        System.out.println("Final sentence:");
         System.out.println(sentence.toString().trim());
     }
 }

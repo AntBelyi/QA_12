@@ -4,15 +4,15 @@ public class Task_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введіть число: ");
+        System.out.print("Enter a number: ");
         String input = scanner.nextLine();
 
         String reversed = new StringBuilder(input).reverse().toString();
 
         if (input.equals(reversed)) {
-            System.out.println("Число є паліндромом.");
+            System.out.println("The number is a palindrome.");
         } else {
-            System.out.println("Число не є паліндромом.");
+            System.out.println("The number is not a palindrome.");
         }
     }
 }

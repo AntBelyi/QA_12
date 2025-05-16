@@ -4,28 +4,28 @@ public class Task_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введіть максимальну вагу складу: ");
+        System.out.print("Enter warehouse maximum capacity: ");
         int maxCapacity = scanner.nextInt();
         int currentCapacity = maxCapacity;
 
         while (currentCapacity > 0) {
-            System.out.print("Введіть вагу металу для здачі: ");
+            System.out.print("Enter the weight of the metal to deposit: ");
             int metalWeight = scanner.nextInt();
 
             if (metalWeight < 5) {
-                System.out.println("Неможливо прийняти таку малу вагу. Мінімальна вага — 5 кг.");
+                System.out.println("Cannot accept such a small weight. Minimum is 5 kg.");
                 continue;
             }
 
             if (metalWeight > currentCapacity) {
-                System.out.println("Недостатньо місця на складі для цієї кількості металу.");
+                System.out.println("Not enough space in the warehouse for this amount of metal.");
                 continue;
             }
 
             currentCapacity -= metalWeight;
-            System.out.println("Метал прийнято. Залишилося місця: " + currentCapacity + " кг.");
+            System.out.println("Metal accepted. Remaining space: " + currentCapacity + " kg.");
         }
 
-        System.out.println("Склад заповнений. Прийом металу завершено.");
+        System.out.println("Warehouse is full. Metal reception is over.");
     }
 }

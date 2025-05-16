@@ -6,20 +6,17 @@ public class Task_5 {
         int[] numbers = new int[10];
         Random random = new Random();
 
-        // Заповнення масиву випадковими числами від 0 до 99
-        System.out.print("Згенерований масив: ");
+        System.out.print("Generated array: ");
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(100); // від 0 до 99
+            numbers[i] = random.nextInt(100);
             System.out.print(numbers[i] + " ");
         }
         System.out.println();
 
-        // Введення числа користувачем
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введіть число для пошуку: ");
+        System.out.print("Enter a number to search: ");
         int userNumber = scanner.nextInt();
 
-        // Перевірка, чи є число у масиві
         boolean found = false;
         for (int number : numbers) {
             if (number == userNumber) {
@@ -29,9 +26,9 @@ public class Task_5 {
         }
 
         if (found) {
-            System.out.println("Число є в масиві.");
+            System.out.println("The number is in the array.");
         } else {
-            System.out.println("Числа немає в масиві.");
+            System.out.println("The number is not in the array.");
         }
     }
 }

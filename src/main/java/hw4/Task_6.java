@@ -1,3 +1,5 @@
+package hw4;
+
 import java.util.Random;
 
 public class Task_6 {

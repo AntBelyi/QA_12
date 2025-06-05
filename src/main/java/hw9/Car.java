@@ -1,26 +1,10 @@
-public class BuilderExample {
-    public static void main(String[] args) {
-        System.out.println("--- Builder Pattern Example ---");
-
-        // Creating a Car object using the Builder
-        Car car = new Car.Builder()
-                .setModel("Tesla Model S")
-                .setPrice(79999.99)
-                .setMaxSpeed(250)
-                .setCountOfWheels(4)
-                .build();
-
-        System.out.println(car);
-    }
-}
-
-class Car {
+public class Car {
     private String model;
     private double price;
     private int maxSpeed;
     private int countOfWheels;
 
-    // Private constructor
+    // Приватний конструктор — тільки через Builder
     private Car(Builder builder) {
         this.model = builder.model;
         this.price = builder.price;
@@ -28,7 +12,17 @@ class Car {
         this.countOfWheels = builder.countOfWheels;
     }
 
-    // Static nested Builder class
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", price=" + price +
+                ", maxSpeed=" + maxSpeed +
+                ", countOfWheels=" + countOfWheels +
+                '}';
+    }
+
+    // Статичний клас Builder
     public static class Builder {
         private String model;
         private double price;
@@ -59,14 +53,5 @@ class Car {
             return new Car(this);
         }
     }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", price=" + price +
-                ", maxSpeed=" + maxSpeed +
-                ", countOfWheels=" + countOfWheels +
-                '}';
-    }
 }
+

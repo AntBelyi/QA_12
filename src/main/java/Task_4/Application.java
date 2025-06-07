@@ -1,4 +1,4 @@
-package hw9_4;
+package Task_4;
 
 public class Application {
     public static void main(String[] args) {
@@ -12,4 +12,3 @@ public class Application {
         System.out.println(car);
     }
 }
-

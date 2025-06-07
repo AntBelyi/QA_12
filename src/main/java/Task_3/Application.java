@@ -1,4 +1,4 @@
-package hw9_3;
+package Task_3;
 
 public class Application {
     public static void main(String[] args) {

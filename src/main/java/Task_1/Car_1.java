@@ -1,12 +1,12 @@
-package hw9_1;
+package Task_1;
 
-public class Car implements Comparable <Car>{
+public class Car_1 {
 
     private String name;
     private int price;
     private int speed;
 
-    public Car(String name, int price, int speed) {
+    public Car_1(String name, int price, int speed) {
         this.name = name;
         this.price = price;
         this.speed = speed;
@@ -22,11 +22,6 @@ public class Car implements Comparable <Car>{
 
     public int getSpeed() {
         return speed;
-    }
-
-    @Override
-    public  int compareTo(Car o){
-        return this.speed - o.speed;
     }
 
     @Override

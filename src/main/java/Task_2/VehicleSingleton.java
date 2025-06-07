@@ -1,4 +1,4 @@
-package hw9_2;
+package Task_2;
 
 public class VehicleSingleton {
     private static VehicleSingleton instance;

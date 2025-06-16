@@ -1,4 +1,7 @@
-package Task_1;
+package hw_12.Task_1;
 
-public class ValueError {
+public class ValueError extends Exception {
+    public ValueError(String message){
+        super(message);
+    }
 }

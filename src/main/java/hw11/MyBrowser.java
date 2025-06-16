@@ -1,4 +1,9 @@
-package hw11;
+package hw_11;
 
-public class MyBrowser {
+public class MyBrowser implements CanBeCloused{
+
+    @Override
+    public void clouse() {
+        System.out.println("Browser closed");
+    }
 }

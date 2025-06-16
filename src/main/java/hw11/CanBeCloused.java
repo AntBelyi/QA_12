@@ -1,4 +1,6 @@
-package hw11;
+package hw_11;
 
-public class CanBeCloused {
+
+public interface CanBeCloused {
+    void clouse();
 }

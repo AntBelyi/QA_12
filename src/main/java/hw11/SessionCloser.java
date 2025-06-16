@@ -1,4 +1,9 @@
-package hw11;
+package hw_11;
 
-public class SessionCloser {
+import java.util.List;
+
+@FunctionalInterface
+
+public interface SessionCloser  {
+    void closeSession(List<CanBeCloused> entities);
 }

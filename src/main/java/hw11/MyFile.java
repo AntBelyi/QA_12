@@ -1,4 +1,9 @@
-package hw11;
+package hw_11;
 
-public class MyFile {
+public class MyFile implements CanBeCloused{
+
+    @Override
+    public void clouse() {
+        System.out.println("File closed");
+    }
 }

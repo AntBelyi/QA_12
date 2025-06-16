@@ -1,4 +1,4 @@
-package Task_3;
+package hw_9.Task_3;
 
 public class AnimalFactory {
     public Animal createAnimal(String type) {

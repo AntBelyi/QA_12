@@ -1,4 +1,4 @@
-package Task_2;
+package hw_9.Task_2;
 
 public class Application {
     public static void main(String[] args) {

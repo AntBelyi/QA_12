@@ -1,8 +1,8 @@
-package Task_4;
+package hw_9.Task_4;
 
 public class Car {
 
-private String model;
+    private String model;
     private double price;
     private int maxSpeed;
     private int countOfWheels;
@@ -44,13 +44,15 @@ private String model;
             return new Car(this);
         }
     }
+
     @Override
-        public String toString() {
-            return "Car{" +
-                    "model='" + model + '\'' +
-                    ", price=" + price +
-                    ", maxSpeed=" + maxSpeed +
-                    ",countOfWheels=" + countOfWheels +
-                    '}';
-        }
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", price=" + price +
+                ", maxSpeed=" + maxSpeed +
+                ",countOfWheels=" + countOfWheels +
+                '}';
     }
+}
+

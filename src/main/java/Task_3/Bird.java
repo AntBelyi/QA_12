@@ -1,4 +1,7 @@
-package Task_3;
+package hw_9.Task_3;
 
-public class Bird {
+public class Bird implements Animal {
+    public void speak() {
+        System.out.println("Bird says: Chirp!");
+    }
 }

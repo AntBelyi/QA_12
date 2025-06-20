@@ -1,4 +1,4 @@
-package Task_1;
+package hw_12.Task_1;
 
 public class Calculator {
     public double add(double a, double b) {

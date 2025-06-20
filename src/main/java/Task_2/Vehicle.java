@@ -1,4 +1,4 @@
-package HW12_Task_2;
+package Task_2;
 
 public class Vehicle {
     private String name;

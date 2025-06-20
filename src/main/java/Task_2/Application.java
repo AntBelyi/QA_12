@@ -1,4 +1,4 @@
-package HW12_Task_2;
+package Task_2;
 
 import java.util.Optional;
 

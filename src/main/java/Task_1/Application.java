@@ -1,4 +1,4 @@
-package HW12_Task_1;
+package Task_1;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;

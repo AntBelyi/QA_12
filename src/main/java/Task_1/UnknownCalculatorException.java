@@ -1,4 +1,4 @@
-package HW12_Task_1;
+package Task_1;
 
 public class UnknownCalculatorException extends Exception {
     public UnknownCalculatorException(String message) {

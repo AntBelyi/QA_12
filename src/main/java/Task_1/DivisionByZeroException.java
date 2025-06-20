@@ -1,4 +1,4 @@
-package HW12_Task_1;
+package Task_1;
 
 public class DivisionByZeroException extends Exception{
     public DivisionByZeroException(String message) {

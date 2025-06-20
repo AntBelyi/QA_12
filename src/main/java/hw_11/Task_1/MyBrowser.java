@@ -1,4 +1,4 @@
-package Task_1;
+package hw_11.Task_1;
 
 public class MyBrowser implements CanBeClosed {
     public void close() {

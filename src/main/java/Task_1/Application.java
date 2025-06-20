@@ -1,4 +1,4 @@
-package HW11_Task_1;
+package Task_1;
 
 import java.util.ArrayList;
 import java.util.List;

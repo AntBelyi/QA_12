@@ -1,4 +1,4 @@
-package HW11_Task_2;
+package Task_2;
 
 public class Person {
     private String name;

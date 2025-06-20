@@ -1,6 +1,5 @@
-package HW11_Task_2;
+package Task_2;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Application {

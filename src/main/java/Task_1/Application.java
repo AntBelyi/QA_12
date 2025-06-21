@@ -5,27 +5,22 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        Car_1 tesla     = new Car_1("Tesla Model S", 79_999, 322);
-        Car_1 bmw       = new Car_1("BMW M3",        69_999, 290);
-        Car_1 audi      = new Car_1("Audi RS7",     114_000, 305);
-        Car_1 mercedes  = new Car_1("Mercedes‑AMG GT",118_600,310);
-        Car_1 toyota    = new Car_1("Toyota Supra",  43_000, 250);
+        Car_1 Porsche = new Car_1("Porsche", 29000, 300);
+        Car_1 BWB = new Car_1("BWB", 25000, 280);
+        Car_1 Kia = new Car_1("Kia", 21000, 270);
+        Car_1 Opel = new Car_1("Opel", 19000, 240);
+        Car_1 Honda = new Car_1("Honda", 26000, 290);
 
         CarSpeedComparator carSpeedComparator = new CarSpeedComparator();
 
-        List<Car_1> cars = new ArrayList<>();
-        cars.add(tesla);
-        cars.add(bmw);
-        cars.add(audi);
-        cars.add(mercedes);
-        cars.add(toyota);
+        List <Car_1> car1List= new ArrayList<>();
+        car1List.add(Porsche);
+        car1List.add(BWB);
+        car1List.add(Kia);
+        car1List.add(Opel);
+        car1List.add(Honda);
 
-        cars.sort(carSpeedComparator);
-
-        // Now the list is sorted from slowest to fastest.
-        // Print each car so you can see the result.
-        for (Car_1 car : cars) {
-            System.out.println(car);
-        }
+        car1List.sort(carSpeedComparator);
+        System.out.println(carSpeedComparator);
     }
 }

@@ -2,12 +2,12 @@ package hw_9.Task_2;
 
 public class Application {
     public static void main(String[] args) {
-        VehicleSingleton tesla  = VehicleSingleton.getInstance("Tesla", 320, 85000);
-        VehicleSingleton bmw    = VehicleSingleton.getInstance("BMW", 290, 72000);
-        VehicleSingleton toyota = VehicleSingleton.getInstance("Toyota", 250, 38000);
+        VehicleSingleton Subaru = VehicleSingleton.getInstance("Subaru", 280, 27000);
+        VehicleSingleton Nissan = VehicleSingleton.getInstance("Nissan", 260, 24000);
+        VehicleSingleton Ford = VehicleSingleton.getInstance("Ford", 240, 22000);
 
-        System.out.println(tesla + " | Hash: " + tesla.hashCode());
-        System.out.println(bmw + " | Hash: " + bmw.hashCode());
-        System.out.println(toyota + " | Hash: " + toyota.hashCode());
+        System.out.println(Subaru + " | Hash: " + Subaru.hashCode());
+        System.out.println(Nissan + " | Hash: " + Nissan.hashCode());
+        System.out.println(Ford + " | Hash: " + Ford.hashCode());
     }
 }

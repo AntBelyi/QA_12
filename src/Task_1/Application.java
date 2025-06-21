@@ -1,4 +1,4 @@
-package hw_11;
+package hw_11.Tack_1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,6 @@ public class Application {
             }
         };
         sessionCloser.closeSession(entities);
-
-        System.out.println("Hello, I am from Ukraine!");
+        System.out.println("Hello");
     }
 }

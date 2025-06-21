@@ -7,12 +7,12 @@ public class ApplicationQueue {
     public static void main(String[] args) {
         Queue<String> stringsQueue = new LinkedList<>();
 
-        stringsQueue.add("Kyiv");
-        stringsQueue.add("Lviv");
-        stringsQueue.add("Odesa");
-        stringsQueue.offer("Dnipro");
-        stringsQueue.offer("Kharkiv");
-        stringsQueue.offer("Zaporizhzhia");
+        stringsQueue.add("March");
+        stringsQueue.add("April");
+        stringsQueue.add("May");
+        stringsQueue.offer("June");
+        stringsQueue.offer("July");
+        stringsQueue.offer("August");
 
         System.out.println(stringsQueue.element());
         System.out.println(stringsQueue);

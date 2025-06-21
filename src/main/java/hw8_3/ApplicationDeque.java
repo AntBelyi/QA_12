@@ -2,26 +2,27 @@ package hw8_3;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 
 public class ApplicationDeque {
     public static void main(String[] args) {
 
         Deque<String> stringsdeque = new ArrayDeque<>();
 
-        stringsdeque.add("Apple");
-        stringsdeque.add("Banana");
-        stringsdeque.add("Cherry");
-        stringsdeque.offer("Date");
-        stringsdeque.offer("Elderberry");
-        stringsdeque.offer("Fig");
+        stringsdeque.add("March");
+        stringsdeque.add("April");
+        stringsdeque.add("May");
+        stringsdeque.offer("June");
+        stringsdeque.offer("July");
+        stringsdeque.offer("August");
 
         int index = 0;
         String resultValue = "";
-        for (String value : stringsdeque) {
-            if (index == 2) {
-                resultValue = value;
+        for (String Value : stringsdeque){
+            if (index == 2){
+                resultValue = Value;
             }
-            index++;
+            index ++;
         }
 
         System.out.println(resultValue);

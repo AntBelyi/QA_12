@@ -12,10 +12,10 @@ public class Application {
             String name = result.get().getName();
             System.out.println(name);
         }
-        Vechicle result1 = result.orElseGet(() -> (new Vechicle("Boat", 900, 200, 11)));
+        Vechicle result1 = result.orElseGet(() -> (new Vechicle("Boat", 100, 20, 0)));
         System.out.println(result1 + "if vechicle exists, a new one is not created");
 
-        Vechicle result2 = resultNull.orElseGet(() -> (new Vechicle("Boat", 900, 200, 11)));
+        Vechicle result2 = resultNull.orElseGet(() -> (new Vechicle("Boat", 100, 20, 0)));
         System.out.println(result2 + "If vechicle null, create new vechilce boat");
 
         Vechicle result3 = result.orElse(car);
@@ -24,7 +24,7 @@ public class Application {
         System.out.println(result4 + "vechicle null");
 
         Vechicle result5 = Optional.ofNullable(plane).orElse(car);
-        Vechicle result6 = Optional.ofNullable(plane).orElseGet(() -> (new Vechicle("train", 400, 126, 0)));
+        Vechicle result6 = Optional.ofNullable(plane).orElseGet(() -> (new Vechicle("train", 20, 80, 0)));
         System.out.println(result5);
         System.out.println(result6);
 

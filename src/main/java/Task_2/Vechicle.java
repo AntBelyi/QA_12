@@ -1,16 +1,16 @@
 package hw_12.Task_2;
 
-public class Vechicle {
+public class Vehicle { // Имя класса - Vehicle
     private String name;
     private int speed;
-    private int price;
-    private int countOffWheels;
+    private double price;
+    private int countOfWheels;
 
-    public Vechicle( String name, int price, int speed,int countOffWheels) {
-        this.countOffWheels = countOffWheels;
+    public Vehicle(String name, int speed, double price, int countOfWheels) {
         this.name = name;
-        this.price = price;
         this.speed = speed;
+        this.price = price;
+        this.countOfWheels = countOfWheels;
     }
 
     public String getName() {
@@ -21,21 +21,21 @@ public class Vechicle {
         return speed;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public int getCountOffWheels() {
-        return countOffWheels;
+    public int getCountOfWheels() {
+        return countOfWheels;
     }
 
     @Override
     public String toString() {
-        return "Vechicle{" +
+        return "Vehicle{" + // Здесь тоже лучше поправить на Vehicle
                 "name='" + name + '\'' +
                 ", speed=" + speed +
                 ", price=" + price +
-                ", countOffWheels=" + countOffWheels +
+                ", countOfWheels=" + countOfWheels +
                 '}';
     }
 }

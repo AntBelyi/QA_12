@@ -4,30 +4,56 @@ import java.util.Optional;
 
 public class Application {
     public static void main(String[] args) {
-        Vechicle car = new Vechicle("Car", 15000, 300, 4);
-        Vechicle plane = null;
-        Optional<Vechicle> result = Optional.ofNullable(car);
-        Optional<Vechicle> resultNull = Optional.ofNullable(plane);
-        if (result.isPresent()) {
-            String name = result.get().getName();
-            System.out.println(name);
+        Vehicle car1 = new Vehicle("Ferrari", 300, 55000, 4);
+        Vehicle car2 = null;
+
+        Optional<Vehicle> vehicle1 = Optional.ofNullable(car1);
+        Optional<Vehicle> vehicle2 = Optional.ofNullable(car2);
+
+        System.out.println(vehicle1);
+        System.out.println(vehicle2);
+
+        System.out.println(vehicle1);
+        System.out.println("isPresent(): " + vehicle1.isPresent());
+        System.out.println("isEmpty(): " + vehicle1.isEmpty());
+
+        vehicle1.ifPresent(v -> System.out.println("ifPresent(): " + v));
+
+        Vehicle defaultVehicle = new Vehicle("Bicycle", 50, 1000, 2);
+        System.out.println("orElse(): " + vehicle1.orElse(defaultVehicle));
+
+        System.out.println("orElseGet(): " + vehicle1.orElseGet(() ->
+                new Vehicle("Logan", 220, 20000, 4)));
+
+        try {
+            Vehicle v = vehicle1.orElseThrow(() -> new RuntimeException("Object missing"));
+            System.out.println("orElseThrow(): " + v);
+        } catch (RuntimeException e) {
+            System.out.println("orElseThrow(): " + e.getMessage());
         }
-        Vechicle result1 = result.orElseGet(() -> (new Vechicle("Boat", 400, 25, 5)));
-        System.out.println(result1 + "if vechicle exists, a new one is not created");
 
-        Vechicle result2 = resultNull.orElseGet(() -> (new Vechicle("Boat", 200, 30, 15)));
-        System.out.println(result2 + "If vechicle null, create new vechilce boat");
+        Optional<String> name1 = vehicle1.map(Vehicle::getName);
+        System.out.println("map(): " + name1.orElse("Name missing"));
 
-        Vechicle result3 = result.orElse(car);
-        Vechicle result4 = resultNull.orElse(plane);
-        System.out.println(result3 + "vechicle exists");
-        System.out.println(result4 + "vechicle null");
+        System.out.println(vehicle2);
+        System.out.println("isPresent(): " + vehicle2.isPresent());
+        System.out.println("isEmpty(): " + vehicle2.isEmpty());
 
-        Vechicle result5 = Optional.ofNullable(plane).orElse(car);
-        Vechicle result6 = Optional.ofNullable(plane).orElseGet(() -> (new Vechicle("train", 35, 70, 77)));
-        System.out.println(result5);
-        System.out.println(result6);
+        vehicle2.ifPresent(v -> System.out.println("ifPresent(): " + v));
 
+        System.out.println("orElse(): " + vehicle2.orElse(defaultVehicle));
 
+        System.out.println("orElseGet(): " + vehicle2.orElseGet(() ->
+                new Vehicle("Logan", 220, 20000, 4)));
+
+        try {
+            Vehicle v = vehicle2.orElseThrow(() -> new RuntimeException("Object missing"));
+            System.out.println("orElseThrow(): " + v);
+        } catch (RuntimeException e) {
+            System.out.println("orElseThrow(): " + e.getMessage());
+        }
+
+        Optional<String> name2 = vehicle2.map(Vehicle::getName);
+        System.out.println("map(): " + name2.orElse("Name missing"));
     }
 }

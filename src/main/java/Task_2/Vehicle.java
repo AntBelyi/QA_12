@@ -1,23 +1,23 @@
-package hw_12.Task_2;
-
-public class Vehicle { // Имя класса - Vehicle
+// Vehicle.java
+public class Vehicle {
     private String name;
-    private int speed;
+    private double speed;
     private double price;
     private int countOfWheels;
 
-    public Vehicle(String name, int speed, double price, int countOfWheels) {
+    public Vehicle(String name, double speed, double price, int countOfWheels) {
         this.name = name;
         this.speed = speed;
         this.price = price;
         this.countOfWheels = countOfWheels;
     }
 
+    // Гетери
     public String getName() {
         return name;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
@@ -31,7 +31,7 @@ public class Vehicle { // Имя класса - Vehicle
 
     @Override
     public String toString() {
-        return "Vehicle{" + // Здесь тоже лучше поправить на Vehicle
+        return "Vehicle{" +
                 "name='" + name + '\'' +
                 ", speed=" + speed +
                 ", price=" + price +

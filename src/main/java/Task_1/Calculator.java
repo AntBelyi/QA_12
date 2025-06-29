@@ -1,6 +1,6 @@
-package hw_12.Task_1;
-
+// Calculator.java
 public class Calculator {
+
     public double add(double a, double b) {
         return a + b;
     }
@@ -15,7 +15,7 @@ public class Calculator {
 
     public double divide(double a, double b) throws DivisionByZeroException {
         if (b == 0) {
-            throw new DivisionByZeroException("Error.Division by zero error impossible.");
+            throw new DivisionByZeroException("Помилка: Ділення на нуль неможливе!");
         }
         return a / b;
     }

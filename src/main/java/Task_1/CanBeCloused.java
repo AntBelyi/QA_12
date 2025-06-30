@@ -1,4 +1,4 @@
-package hw_11.Tack_1;
+package Task_1;
 
 
 public interface CanBeCloused {

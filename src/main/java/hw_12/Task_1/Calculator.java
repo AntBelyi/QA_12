@@ -1,3 +1,5 @@
+package hw_12.Task_1;
+
 // Calculator.java
 public class Calculator {
 

@@ -1,3 +1,5 @@
+package hw_12.Task_2;
+
 // Vehicle.java
 public class Vehicle {
     private String name;

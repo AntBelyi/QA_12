@@ -1,3 +1,5 @@
+package hw_12.Task_1;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

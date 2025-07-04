@@ -1,4 +1,4 @@
-package hw_6_2_1;
+package hw6_2_1;
 
 public class Triangle extends Figure {
     private double base, height, side1, side2, side3;

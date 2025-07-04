@@ -1,4 +1,4 @@
-package hw_6_2_1;
+package hw6_2_1;
 
 public abstract class Figure {
     public abstract double getArea();

@@ -1,4 +1,4 @@
-package hw_6_2_2;
+package hw6_2_2;
 
 public class UpperCaseProcessor implements TextProcessor {
 
